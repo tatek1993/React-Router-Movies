@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Link } from "react-router-dom";
 import axios from 'axios';
 
 const MovieList = props => {
@@ -32,6 +33,7 @@ function MovieDetails({ movie }) {
   return (
     <div className="movie-card">
       <h2>{title}</h2>
+      <Link></Link>
       <div className="movie-director">
         Director: <em>{director}</em>
       </div>
